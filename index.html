@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Olarm.com</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="reset-css.css">
+	<link rel="shortcut icon" type="image/jpg" href="data:image/png;base64,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">
+	<link rel="stylesheet" type="text/css" href="<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@200&display=swap rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<div class="box">
+			<div class="div1">
+			<img class="img1" src="images-videous/olarm_logo.png">		
+		    </div>
+		    <div class="div1">
+			<ul class="ul1">
+				<li class="li"> <a class="a" href="#">HOME</a></li>
+				<li class="li"><a class="a1" href="#">FEATURES</a></li>
+				<li class="li"><a class="a1" href="#">PLANS</a></li>
+				<li class="li"><a class="a1" href="#">MEET ALARM</a></li>
+				<li class="li"><a class="a2" href="#">Sign up</a></li>
+			    </ul>
+			    
+		    </div>
+		    <div class="div1">
+				 <a class="a3" href="#">Sign in</a>
+		    </div>
+
+		    <div class="div2">
+		    	<h1 class="h1">World's <span class="span1">Smartest</span><br> Home Security</h1>
+		    	<div class="box2">
+		    		Unique security experiences with more than 300,000 clients, Simple<br> Installation, Convenience & Free Monitoring
+		    	</div>
+		    	<div>
+		    		<a href="#"><img class="img2" src="images-videous/Group 1449.png"></a>
+		    	</div>
+		    	
+
+		    </div>
+		    <img class="img3" src="images-videous/Group 1443.png">
+		    <a href="https://accounts.google.com/ServiceLogin/signinchooser?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img class="img4" src="images-videous/Group 1445.png"></a>
+		    <a href="https://twitter.com/"><img class="img5" src="images-videous/Group 1446.png"></a>
+		    <a href="https://www.facebook.com/"><img class="img6" src="images-videous/Group 1447.png"></a>
+
+		    <div class="box3">
+		    	<div class="a-div1"><span class="span2">How Many Homes?</span><br> <a class="a-a" href="#">Number of Homes</a></div>
+		    	<div class="a-div2"> <span class="span3">Choose Plan</span> <br><a class="a-a" href="#">Professional Plan</a></div>
+		    	<div class="a-div3"><span class="span4">CHECK OUT</span><br><a class="a-a" href="#">Payment & Shipment</a></div>
+		    	
+
+
+
+		    </div>
+		    <div class="box4">
+		    	<div class="b-div1"><a class="a-a1" href="#">Quick Start</a></div>
+		    	<div class="b-div2"><img src="images-videous/Path Copy.png"></div>
+		    </div>
+		    <img class="rectangle1" src="images-videous/Rectangle Copy.png">
+		     <img class="rectangle2" src="images-videous/Rectangle Copy.png">
+
+		</div>
+
+		<div class="div3">
+			<p>Tailored Total Home Protection</p>
+			<h1>Next Generation Home <br>
+                Alarm System</h1>
+		</div>
+	</header>
+
+		<div class="div4"><img class="a-img1" src="images-videous/Group 1456.png"></div>
+		<div class="div4"><img class="a-img2" src="images-videous/Group 1452.png"></div>
+		<div class="div5"><img class="a-img3" src="images-videous/Group 1455.png"></div>
+		<div class="div5"><img class="a-img4" src="images-videous/Group 1457.png"></div>
+		<video class="vid1" src="images-videous/vid1.mp4" controls></video>
+
+		<div class="box5">
+			<div class="c-div1">Olarm Hub + Sensors + O’Clicker</div>
+			<div class="c-div2">Meet Olarm Kit</div>
+			<div class="c-div3">
+				<div class="c-div4">Smart Sensor
+                </div>
+                <p class="p1">This is y our first all-in-one sensor on the market. Motion,<br> 
+                   Water Leak, Smoke Alarm, Temperature and Humidity<br> 
+                   are some of the features that can be controlled through <br>
+                   this Smart Sensor.</p>
+            </div>
+            <img class="c-img1" src="images-videous/Mask Group 9.png">
+            <img class="c-img2" src="images-videous/Group 11432.png">
+            <img class="c-img3" src="images-videous/Group 11439.png">
+            <img class="c-img4" src="images-videous/Group 11437.png">
+            <img class="c-img5" src="images-videous/Group 11461.png">
+            <img class="c-img6" src="images-videous/Group 11461.png">
+            <img class="c-img7" src="images-videous/Group 11461.png">
+			<img class="c-img8" src="images-videous/gROUP 11459.png">
+
+		</div>
+
+
+		<div class="box6">
+			<div class="box7">
+				<p class="p2">How Things Work!</p>
+				<p class="p3">Home Automation<br>
+               and Integrations
+            </p>
+            <p class="p4">
+            	Let’s imagine you can control your entire home through voice<br> command or even remotely through an app. But why imagine, when<br> we can deliver. Connect and control your home now through our<br> intuitive Olarm App
+
+            </p>
+            <div class="div6">
+            	<article class="art1"><a href="https://ring.com/"><img src="images-videous/integrate-01.png"></article></a>
+            	<div><a href="https://home.nest.com/login/?next=https%3A%2F%2Fhome.nest.com%2F"><img src="images-videous/integrate-02.png"></div></a>
+            	<div><a href="https://assistant.google.com/"><img src="images-videous/integrate-04.png"></div></a>
+            </div>
+            <div class="div7">
+            	<article class="art1"><a href="https://developer.amazon.com/en-US/alexa"><img src="images-videous/integrate-05.png"></article></a>
+            	<div><a href="https://www.arlo.com/en-us/home"><img src="images-videous/integrate-03.png"></div></a>
+            </div>
+            <p class="p5">Download our app!</p>
+				<div class="div8">
+					<article class="art1"><a href="https://play.google.com/store/apps"><img src="images-videous/Google-play.png"></article></a>
+					<div><a href="https://www.apple.com/app-store/"><img src="images-videous/App-store.png"></div></a>
+				</div>
+
+
+				
+			</div>
+			<img class="img7" src="images-videous/HG (2).png">
+
+		</div>
+
+		<p class="p6">Choose The Best Fit</p>
+		<p class="p7">Protection Plans</p>
+		<div class="div9">
+			<p class="p8">Monthly</p>
+			<img src="images-videous/kp7.png">
+			<p class="p9">Yearly</p>
+		</div>
+
+
+		<div class="box8">
+			<div class="div10">
+				<p class="a-p">PROFESSIONAL</p>
+				<img class="a-mg" src="images-videous/varskvlavi3.png">
+				<p class="a-p1"><span class="span5">$</span>09.00</p>
+				<p class="a-p2">per month</p>
+				<div>
+				<img class="a-im" src="images-videous/Path 9322.png">
+				<p class="a-p3">Self monitoring via app</p>
+			   </div>
+			   <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">Add a trusted friend/ family member</p>
+			   </div>
+			   <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">Relies on Wi-Fi connection</p>
+			   </div>
+			   <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">Cellular failover in case of Wi-Fi interruptions</p>
+			   </div>
+			    <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">24/7 Professional monitoring</p>
+			   </div>
+			   <div class="div-c">
+			   	<div class="div-a"><a class="a-a2" href="#">Choose Plan</a></div>
+			   </div>
+			
+				
+			</div>
+
+
+			<div class="div11">
+				<p class="a-p">PROFESSIONAL</p>
+				<img class="a-mg2" src="images-videous/varskvlavebi2.png">
+				<p class="a-p1"><span class="span5">$</span>09.00</p>
+				<p class="a-p2">per month</p>
+				<div>
+				<img class="a-im" src="images-videous/Path 9322.png">
+				<p class="a-p3">Self monitoring via app</p>
+			   </div>
+			   <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">Add a trusted friend/ family member</p>
+			   </div>
+			   <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">Relies on Wi-Fi connection</p>
+			   </div>
+			   <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">Cellular failover in case of Wi-Fi interruptions</p>
+			   </div>
+			    <div>
+				<img class="a-im1" src="images-videous/Path 9322.png">
+				<p class="a-p3">24/7 Professional monitoring</p>
+			   </div>
+			   <div class="div-c">
+			   	<div class="div-a"><a class="a-a2" href="#">Choose Plan</a></div>
+			   </div>
+			
+				
+			</div>
+
+			<div class="div12">
+
+
+
+			</div>
+			<div class="div13">
+				<p class="b-p">CELLULAR</p>
+				<img class="b-img" src="images-videous/varskvlavi4.png">
+				<p class="a-p2"><span class="span6">$</span>05.00</p>
+				<p class="a-p4">per month</p>
+				<div>
+					<img class="b-img1" src="images-videous/Path 9328.png">
+					<p class="b-p1">Self monitoring via app</p>
+				</div>
+				<div>
+					<img class="b-img2" src="images-videous/Path 9328.png">
+					<p class="b-p1">Add a trusted friend/ family member</p>
+				</div>
+				<div>
+					<img class="b-img2" src="images-videous/Path 9328.png">
+					<p class="b-p1">Relies on Wi-Fi connection</p>
+				</div>
+				<div>
+					<img class="b-img2" src="images-videous/Path 9328.png">
+					<p class="b-p1">Cellular failover in case of Wi-Fi interruptions</p>
+				</div>
+				<img class="b-p2" src="images-videous/Path 9332.png">
+				<p class="b-p3"> <a class="b-a" href="#">Choose Plan</a></p>
+			</div>
+
+			
+		</div>
+
+		<br>
+		<div class="box9">
+			<div class="box10">
+				<p class="c-p1">Freedom Guaranteed</p>
+				<h2 class="c-p2">Control from<br>
+             anywhere</h2>
+             <p class="c-p3">Get rid of the unnecessary alarm codes and keypads. Olarm will<br> recognize your smartphone as its control panel, allowing for a<br> seamless and easy access point. Our intuitive app will give you<br> full access and control from anywhere at anytime.
+
+             </p>
+             <div class="c-div">
+             	<p class="c-p4"><a class="c-a" href="#">Protect Your Home</a></p>
+             </div>
+				
+			</div>
+		</div>
+
+
+      <footer>
+      	<div class="box11">
+      		<div class="box12">
+      			<img class="d-img1" src="images-videous/Olarm Logo.png">
+      			<p class="d-p1">Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit, sed diam<br> nonummy </p>
+      			<div class="d-div">
+      			<a  href="https://www.facebook.com/"><img src="images-videous/fc2.png"></a>
+      			<a class="d-a" href="https://twitter.com/"><img src="images-videous/tw2.png"></a>
+      			<a class="d-a" href="https://www.youtube.com/"><img src="images-videous/yt2.png"></a>
+      			<a class="d-a" href="https://www.linkedin.com/"><img src="images-videous/in2.png"></a>
+      		   </div>
+      			
+      		</div>
+      		<div class="box13">
+      			<p><a class="d-a1" href="#">Meet Olarm</a></p>
+      			<p><a class="d-a1" href="#">Features</a></p>
+      			<p><a class="d-a1" href="#">Plans</a></p>
+      			<p><a class="d-a1" href="#">Media</a></p>
+      			<p><a class="d-a1" href="#">Blog</a></p>
+      		</div>
+      		<div class="box13" >
+      			<p><a class="d-a2" href="#">Contact Us</a></p>
+      			<p><a class="d-a2" href="#">Terms of Service</a></p>
+      			<p><a class="d-a2" href="#">Privacy</a></p>
+      			<p><a class="d-a2" href="#">Careers</a></p>
+      			<p><a class="d-a2" href="#">FAQ's</a></p>
+      		</div>
+      		<div class="box13">
+      			<p class="d-p2">Subscribe</p>
+      			<p class="d-p3">Get offers and stay up-to-date</p>
+      			<form>
+      				<label>  </label>
+      				<input type="text" name="fname">
+      				<input type="submit" name="Subscribe">
+      			</form>
+      			<p class="d-p4">Copyrights @2020 Olarm, Inc.</p>
+      		</div>
+      	
+
+      	</div>
+
+
+      </footer>
+      
+
+
+
+</body>
+</html>
